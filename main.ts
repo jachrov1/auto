@@ -1,5 +1,5 @@
 function Doleva () {
-    wuKong.setAllMotor(9, 0)
+    wuKong.setAllMotor(30, 0)
     basic.showLeds(`
         . . # . .
         . # . . .
@@ -12,7 +12,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Heart)
 })
 function Dopredu () {
-    wuKong.setAllMotor(14, 14)
+    wuKong.setAllMotor(30, 30)
     basic.showLeds(`
         . . . . .
         . # . # .
@@ -29,14 +29,14 @@ function Doprava () {
         . . . # .
         . . # . .
         `)
-    wuKong.setAllMotor(0, 9)
+    wuKong.setAllMotor(0, 30)
 }
 function Stop () {
     basic.showIcon(IconNames.No)
     wuKong.stopAllMotor()
 }
 basic.showIcon(IconNames.Heart)
-music.playMelody("C5 C5 C5 C5 C5 C5 C5 C5 ", 40)
+music.playMelody("C5 C5 C5 C5 C5 C5 C5 C5 ", 70)
 basic.showIcon(IconNames.Happy)
 pins.setPull(DigitalPin.P1, PinPullMode.PullUp)
 pins.setPull(DigitalPin.P2, PinPullMode.PullUp)
